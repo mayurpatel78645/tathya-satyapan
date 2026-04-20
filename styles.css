@@ -1,0 +1,139 @@
+/* ClaimGuard IG UI Styles 
+  Designed to be native, non-blocking, and accessible.
+*/
+
+/* Injectable Badge */
+.cg-badge {
+  position: absolute;
+  top: 16px;
+  right: 48px; /* Offset to avoid blocking Instagram's 'more options' dots */
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(4px);
+}
+
+.cg-badge:hover {
+  transform: scale(1.05);
+}
+
+.cg-risk-high {
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+.cg-risk-med {
+  background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Modal Overlay */
+.cg-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  animation: cg-fade-in 0.2s ease-out forwards;
+}
+
+@keyframes cg-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Modal Card */
+.cg-modal-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 90%;
+  color: #262626;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(20px);
+  animation: cg-slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes cg-slide-up {
+  to { transform: translateY(0); }
+}
+
+.cg-modal-body {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.cg-modal-body p {
+  margin: 12px 0;
+}
+
+.cg-modal-body mark {
+  background-color: #ffe8e8;
+  color: #b90000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.cg-reasoning-box {
+  background-color: #f8f9fa;
+  border-left: 4px solid #8e8e8e;
+  padding: 12px 16px;
+  margin-top: 16px;
+  border-radius: 0 8px 8px 0;
+  color: #4a4a4a;
+}
+
+/* Footer & Buttons */
+.cg-modal-footer {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.cg-btn-link {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #efefef;
+  color: #262626;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.cg-btn-link:hover {
+  background-color: #dbdbdb;
+}
+
+.cg-btn-primary {
+  flex: 1;
+  padding: 10px;
+  background-color: #0095f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cg-btn-primary:hover {
+  background-color: #0077c2;
+}
