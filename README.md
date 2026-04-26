@@ -160,7 +160,7 @@ Click **Load unpacked** and select the project folder.
 
 ---
 
-## 📸 Screenshots
+<!--## 📸 Screenshots
 
 Add screenshots here later:
 
@@ -169,7 +169,7 @@ Add screenshots here later:
 * Verification Modal
 * Detection in Action
 
----
+--- -->
 
 ## 💡 Why This Project Matters
 
