@@ -1,8 +1,5 @@
 # 🛡️ Tathya-Satyapan
 
-````md
-# 🛡️ Tathya-Satyapan
-
 **Tathya-Satyapan** *(तथ्य-सत्यापन = Fact Verification)* is a Chrome Extension that detects **misleading, exaggerated, and suspicious claims on Instagram in real time** using a hybrid AI-powered verification engine.
 
 It scans visible Instagram posts, analyzes captions, flags risky claims, and provides users with an explanation so they can think critically before trusting online content.
